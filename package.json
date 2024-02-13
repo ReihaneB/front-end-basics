@@ -11,12 +11,13 @@
     "story:build": "storybook build"
   },
   "dependencies": {
+    "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@emotion/eslint-plugin": "^11.11.0",
+    "@next/eslint-plugin-next": "^14.1.0",
     "@storybook/addon-a11y": "^7.6.14",
     "@storybook/addon-essentials": "^7.6.14",
     "@storybook/addon-interactions": "^7.6.14",
@@ -30,10 +31,20 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^14.1.0",
+    "eslint-plugin-emotion": "^11.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
+    "eslint-plugin-testing-library": "^6.2.0",
     "storybook": "^7.6.14",
     "storybook-addon-pseudo-states": "^2.1.2",
-    "eslint-config-next": "14.1.0"
+    "typescript": "5.3.3",
+    "typescript-eslint": "^7.0.0"
   }
 }
