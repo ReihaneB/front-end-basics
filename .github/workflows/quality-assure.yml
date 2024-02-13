@@ -1,4 +1,4 @@
-name: Quality assure - Lint
+name: Quality assure - Lint, Test
 
 on: push
 
@@ -15,3 +15,6 @@ jobs:
 
       - name: 🧹 Run Linting
         run: npm run lint
+
+      - name: 🧪 Run Test
+        run: npm run test
