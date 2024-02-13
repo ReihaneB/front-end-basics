@@ -1,0 +1,17 @@
+name: Quality assure - Lint
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚀 Prepare Repository
+        uses: actions/checkout@v2
+
+      - name: 🧩 Install Dependencies
+        run: npm ci
+
+      - name: 🧹 Run Linting
+        run: npm run lint
