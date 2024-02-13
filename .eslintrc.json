@@ -1,3 +1,165 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "next/core-web-vitals",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "airbnb",
+      "airbnb/hooks"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "plugins": [
+      "@typescript-eslint",
+      "react",
+      "react-hooks"
+  ],
+  "rules": {
+      "max-len": [
+          "error",
+          {
+              "code": 120,
+              "tabWidth": 2,
+              "ignoreComments": true,
+              "ignoreStrings": true
+          }
+      ],
+      "no-bitwise": ["error", { "allow": ["~"] }],
+      "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+      "no-underscore-dangle": "off",
+      "comma-dangle": [
+          "error",
+          {
+              "arrays": "always-multiline",
+              "objects": "always-multiline",
+              "imports": "always-multiline",
+              "exports": "always-multiline",
+              "functions": "never"
+          }
+      ],
+      "linebreak-style": "off",
+      "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+
+      "@typescript-eslint/consistent-type-assertions": "off",
+      "@typescript-eslint/no-array-constructor": "off",
+      "@typescript-eslint/no-namespace": "off",
+      "@typescript-eslint/no-use-before-define": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-useless-constructor": "off",
+      "@typescript-eslint/no-unused-expressions": "off",
+
+      "no-plusplus": ["off", { "allowForLoopAfterthoughts": true }],
+      "global-require": "off",
+      "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+      "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
+      "no-restricted-syntax": ["error", "WithStatement"],
+      "function-paren-newline": ["warn", "consistent"],
+      "object-curly-newline": ["error", { "consistent": true }],
+      "object-curly-spacing": "off",
+      "template-curly-spacing": ["error", "never"],
+      "arrow-parens": ["error", "as-needed", { "requireForBlockBody": false }],
+      "arrow-body-style": ["error", "as-needed"],
+      "operator-linebreak": ["error", "after"],
+      "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["draft"] }],
+      "consistent-return": ["off"],
+      "wrap-iife": ["error", "inside"],
+
+      "no-multiple-empty-lines": ["error", { "max": 2 }],
+
+      "import/no-extraneous-dependencies": "off",
+      "import/no-unresolved": "off",
+      "import/prefer-default-export": "off",
+      "import/no-named-as-default-member": "off",
+      "import/no-import-module-exports": "off",
+      "import/no-relative-packages": "off",
+      "import/named": "off",
+
+      "import/extensions": [
+          "error",
+          {
+              "js": "never",
+              "json": "always",
+              "png": "always",
+              "svg": "always",
+              "locales": "always",
+              "styles": "always",
+              "store": "always",
+              "shared": "always",
+              "lazy": "always",
+              "css": "always"
+          }
+      ],
+
+      "import/order": [
+          "error",
+          {
+              "groups": ["builtin", "external", "internal", "index", "parent", "sibling"],
+              "newlines-between": "always",
+              "pathGroups": [
+                  {
+                      "pattern": "{widgets,components,config,layouts}/**",
+                      "group": "internal",
+                      "position": "before"
+                  },
+                  {
+                      "pattern": "./*.*",
+                      "group": "sibling",
+                      "position": "after"
+                  }
+              ],
+              "pathGroupsExcludedImportTypes": ["builtin"]
+          }
+      ],
+
+      "react/jsx-props-no-spreading": "off",
+      "react/jsx-filename-extension": "off",
+      "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
+      "react/jsx-max-props-per-line": "off",
+      "react/no-multi-comp": "off",
+      "react/jsx-fragments": "off",
+      "react/forbid-prop-types": "warn",
+      "react/display-name": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/function-component-definition": ["error", { "namedComponents": "function-declaration" }],
+      "react/no-unstable-nested-components": ["error", { "allowAsProps": true }],
+      "react/no-unknown-property": ["error", { "ignore": ["css"] }],
+      "react/no-unescaped-entities": "off",
+      "camelcase": "off",
+
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "off",
+
+      "emotion/jsx-import": "off",
+
+      "testing-library/no-node-access": "off",
+      "testing-library/prefer-screen-queries": "off",
+      "testing-library/prefer-find-by": "off",
+      "testing-library/prefer-presence-queries": "off",
+      "testing-library/no-container": "off",
+
+      "function-call-argument-newline": "off",
+
+      "default-param-last": "off",
+      "no-restricted-exports": "off",
+      "jsx-a11y/label-has-associated-control": [
+          2,
+          {
+              "labelComponents": ["CustomInputLabel"],
+              "labelAttributes": ["label"],
+              "controlComponents": ["CustomInput"],
+              "depth": 3
+          }
+      ]
+  }
 }
