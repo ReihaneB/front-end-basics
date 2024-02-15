@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "declaration-block-single-line-max-declarations": null,
+    "rule-empty-line-before": [
+      "always",
+      { "ignore": ["after-comment", "first-nested"] }
+    ],
+    "declaration-empty-line-before": null,
+    "length-zero-no-unit": null,
+    "value-keyword-case": null,
+    "no-descending-specificity": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      { "ignoreShorthands": ["inset"] }
+    ],
+    "no-duplicate-selectors": null,
+    "selector-class-pattern": ["^[a-z][a-zA-Z0-9]*$", {
+      "resolveNestedSelectors": true,
+      "message": "Selector should be written in camelCase."
+    }]
+  }
+}
