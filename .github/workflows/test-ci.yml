@@ -1,0 +1,17 @@
+name: Test checks - Jest
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚀 Prepare Repository
+        uses: actions/checkout@v2
+
+      - name: 🧩 Install Dependencies
+        run: npm ci
+
+      - name: 🧪 Run Test
+        run: npm run test

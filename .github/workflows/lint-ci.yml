@@ -1,4 +1,4 @@
-name: Quality assure - Lint, Test
+name: Lint checks - EsLint,  Stylelint
 
 on: push
 
@@ -16,5 +16,5 @@ jobs:
       - name: 🧹 Run Linting
         run: npm run lint
 
-      - name: 🧪 Run Test
-        run: npm run test
+      - name: 🎨 Run Stylelint
+        run: npm run stylelint
