@@ -1,7 +1,6 @@
 {
   "plugins": [
     "postcss-flexbugs-fixes",
-    "postcss-nested",
     "cssnano",
     "stylelint",
     [
@@ -10,7 +9,8 @@
         "autoprefixer": {
           "flexbox": "no-2009"
         },
-        "stage": 3,
+        "browsers": "> 0.2% and not dead",
+        "stage": 2,
         "features": {
           "custom-properties": false
         }
