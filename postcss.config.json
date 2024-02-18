@@ -1,7 +1,6 @@
 {
   "plugins": [
     "postcss-flexbugs-fixes",
-    "cssnano",
     "stylelint",
     [
       "postcss-preset-env",
@@ -9,12 +8,18 @@
         "autoprefixer": {
           "flexbox": "no-2009"
         },
+        "@csstools/postcss-global-data": {
+          "files": [
+            "src/styles/media-queries.css"
+          ]
+        },
         "browsers": "> 0.2% and not dead",
         "stage": 2,
         "features": {
           "custom-properties": false
         }
       }
-    ]
+    ],
+    "cssnano"
   ]
 }
