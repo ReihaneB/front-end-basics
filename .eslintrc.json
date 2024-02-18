@@ -144,6 +144,7 @@
       "react/display-name": "off",
       "react/react-in-jsx-scope": "off",
       "react/function-component-definition": ["error", { "namedComponents": "function-declaration" }],
+      "prefer-arrow-callback": [ "error", { "allowNamedFunctions": true } ],
       "react/no-unstable-nested-components": ["error", { "allowAsProps": true }],
       "react/no-unknown-property": ["error", { "ignore": ["css"] }],
       "react/no-unescaped-entities": "off",
