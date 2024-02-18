@@ -9,7 +9,10 @@ const createJestConfig = nextJest({
 // Add any custom config to be passed to Jest
 const config: Config = {
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{ts,tsx}', 'src/**/*.d.ts'],
+  collectCoverageFrom: [
+    'src/**/*.{ts,tsx}',
+    '!src/**/*.d.ts',
+  ],
   coverageDirectory: 'coverage',
   coverageReporters: ['text-summary', 'html'],
   // TODO: Add coverageThreshold when we start writing real tests
