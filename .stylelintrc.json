@@ -8,6 +8,9 @@
       "always",
       { "ignore": ["after-comment", "first-nested"] }
     ],
+    "property-no-unknown": [true, {
+      "ignoreProperties": ["composes"]
+    }],
     "declaration-empty-line-before": null,
     "length-zero-no-unit": null,
     "value-keyword-case": null,
