@@ -1,0 +1,21 @@
+.focus {
+  &:focus {
+    background-color: gold;
+
+    &::after {
+      content: ' focused';
+    }
+  }
+}
+
+.focusable {
+  all: initial;
+  display: block;
+  background-color: silver;
+
+  &::after {
+    content: ' not focused';
+  }
+  
+  composes: focus;
+}
