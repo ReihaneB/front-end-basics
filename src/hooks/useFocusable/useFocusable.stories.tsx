@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { userEvent, within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 
-import { lokiPlayDecorator } from '../../testUtils/loki/play-decorator';
+import { lokiPlayDecorator } from '@/testUtils/loki/play-decorator';
 
 import { useFocusable } from './useFocusable';
 
