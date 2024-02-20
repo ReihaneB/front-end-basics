@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import { userEvent, within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 
+import { lokiPlayDecorator } from '../../testUtils/loki/play-decorator';
+
 import { useFocusable } from './useFocusable';
 
 import styles from './useFocusable.stories.module.css';
@@ -65,11 +67,15 @@ export function ClickToFocus() {
   return <FocusableComponent />;
 }
 
-ClickToFocus.play = async ({ canvasElement }: { canvasElement: HTMLElement }) => {
-  const canvas = within(canvasElement);
+ClickToFocus.play = lokiPlayDecorator(
+  async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+    const canvas = within(canvasElement);
 
-  await userEvent.click(canvas.getByTestId('focus-button'));
-};
+    await userEvent.click(canvas.getByTestId('focus-button'));
+
+    expect(canvas.getByTestId('focusable')).toHaveFocus();
+  }
+);
 
 export function FocusOnTab() {
   return (
@@ -77,9 +83,15 @@ export function FocusOnTab() {
   );
 }
 
-FocusOnTab.play = async () => {
-  await userEvent.tab();
-};
+FocusOnTab.play = lokiPlayDecorator(
+  async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.tab();
+
+    expect(canvas.getByTestId('focusable')).toHaveFocus();
+  }
+);
 
 export function FocusAssociated() {
   return (
@@ -92,10 +104,12 @@ export function FocusAssociated() {
 
 FocusAssociated.storyName = 'Focus the correct element associated with its ref on click';
 
-FocusAssociated.play = async ({ canvasElement }: { canvasElement: HTMLElement }) => {
-  const canvas = within(canvasElement);
+FocusAssociated.play = lokiPlayDecorator(
+  async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+    const canvas = within(canvasElement);
 
-  await userEvent.click(canvas.getByTestId('focus-button-2'));
+    await userEvent.click(canvas.getByTestId('focus-button-2'));
 
-  await expect(canvas.getByTestId('focusable-2')).toHaveFocus();
-};
+    expect(canvas.getByTestId('focusable-2')).toHaveFocus();
+  }
+);

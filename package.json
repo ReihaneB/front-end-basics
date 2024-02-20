@@ -24,6 +24,8 @@
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.11.0",
+    "@loki/create-async-callback": "^0.34.0",
+    "@loki/is-loki-running": "^0.34.0",
     "@next/eslint-plugin-next": "^14.1.0",
     "@storybook/addon-a11y": "^7.6.14",
     "@storybook/addon-essentials": "^7.6.14",
