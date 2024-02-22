@@ -1,4 +1,4 @@
-name: UI checks - Storybook Interactions, Accessibility
+name: UI checks - Storybook Interactions and Accessibility, Imageshots
 
 on: push
 
@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: 🚀 Prepare Repository
         uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
@@ -22,8 +23,14 @@ jobs:
       - name: 🏗️ Build Storybook
         run: npm run story:build --quiet
 
-      - name: 💫 Serve Storybook and run tests
-        run: |
-          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-            "npx http-server storybook-static --port 6006 --silent" \
-            "npx wait-on http://127.0.0.1:6006 && npm run test:story"
+      - name: 💫 Serve Storybook
+        run: npx http-server storybook-static --port 6006 --silent &
+
+      - name: 🔎 Ensure Storybook Server is ready
+        run: npx wait-on http://127.0.0.1:6006
+
+      - name: 📚 Run Interactions and Accessibility
+        run: npm run test:story
+
+      - name: 📸 Run Imageshots
+        run: npm run test:ui
