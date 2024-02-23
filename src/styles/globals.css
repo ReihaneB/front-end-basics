@@ -1,0 +1,89 @@
+:root {
+  /* colors */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+details,
+figcaption,
+figure,
+footer,
+hgroup,
+menu,
+nav {
+  display: 'block',
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
