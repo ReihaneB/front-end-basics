@@ -1,6 +1,5 @@
 import { useRef } from 'react';
-import { userEvent, within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
+import { expect, userEvent, within } from '@storybook/test';
 
 import { lokiPlayDecorator } from '@/testUtils/loki/play-decorator';
 
