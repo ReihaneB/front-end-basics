@@ -39,6 +39,19 @@ exports[`Hooks/useClickable Disabled play-test 1`] = `
 </div>
 `;
 
+exports[`Hooks/useClickable MultipleClicks play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Clicked 1 times
+  </p>
+</div>
+`;
+
 exports[`Hooks/useClickable Playground smoke-test 1`] = `
 <div>
   <button type="button"

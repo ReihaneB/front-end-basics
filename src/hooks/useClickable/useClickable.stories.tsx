@@ -93,6 +93,23 @@ Disabled.play = lokiPlayDecorator(
   }
 );
 
+export function MultipleClicks() {
+  return <ClickableComponent />;
+}
+
+MultipleClicks.storyName = 'Clicking multiple times will only trigger onClick once';
+MultipleClicks.play = lokiPlayDecorator(
+  async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId('clickable'));
+    await userEvent.click(canvas.getByTestId('clickable'));
+    await userEvent.click(canvas.getByTestId('clickable'));
+
+    await waitFor(() => expect(canvas.getByTestId('count')).toHaveTextContent('Clicked 1 times'));
+  }
+);
+
 export function WithOnMouseDown() {
   const [callMouseDown, setCallMouseDown] = useState(0);
 
