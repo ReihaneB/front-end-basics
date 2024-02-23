@@ -13,13 +13,13 @@ export function useDebounceCallback({
 }: useDebounceCallbackProps) {
   const { leading, trailing } = options;
 
-  const callbackRef = useRef<(...rest: unknown[]) => unknown>(callback);
+  const callbackRef = useRef<(...rest: never[]) => void>(callback);
   callbackRef.current = callback;
 
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isLeadingCallRef = useRef<boolean>(false);
 
-  const debounced = useCallback((...rest: unknown[]) => {
+  const debounced = useCallback((...rest: never[]) => {
     if (disableDebounce) {
       callbackRef.current(...rest);
       return;
