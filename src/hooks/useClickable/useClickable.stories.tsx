@@ -55,7 +55,8 @@ ClickOnce.play = lokiPlayDecorator(
   async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     const canvas = within(canvasElement);
 
-    await userEvent.dblClick(canvas.getByTestId('clickable'));
+    await userEvent.click(canvas.getByTestId('clickable'));
+    await userEvent.click(canvas.getByTestId('clickable'));
 
     await waitFor(() => expect(canvas.getByTestId('count')).toHaveTextContent('Clicked 1 times'));
   }
@@ -71,7 +72,8 @@ DisableDebounce.play = lokiPlayDecorator(
   async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     const canvas = within(canvasElement);
 
-    await userEvent.dblClick(canvas.getByTestId('clickable'));
+    await userEvent.click(canvas.getByTestId('clickable'));
+    await userEvent.click(canvas.getByTestId('clickable'));
 
     expect(canvas.getByTestId('count')).toHaveTextContent('Clicked 2 times');
   }
