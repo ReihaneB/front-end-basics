@@ -30,7 +30,7 @@ jobs:
         run: npx wait-on http://127.0.0.1:6006
 
       - name: 📚 Run Interactions and Accessibility
-        run: npm run test:story
+        run: npm run test
 
       - name: 📸 Run Imageshots
         run: npm run test:ui

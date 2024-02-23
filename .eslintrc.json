@@ -11,19 +11,6 @@
       "airbnb",
       "airbnb/hooks"
   ],
-  "overrides": [
-    {
-      "files": [
-        "**/*.test.js",
-        "**/*.test.jsx",
-        "**/*.test.ts",
-        "**/*.test.tsx"
-      ],
-      "env": {
-        "jest": true
-      }
-    }
-  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
       "ecmaVersion": "latest",
