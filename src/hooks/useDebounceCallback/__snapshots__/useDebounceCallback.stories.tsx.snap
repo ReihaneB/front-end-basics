@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hooks/useDebounceCallback CallAfterWaitTime play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 1 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback ClickMulipleTimes play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 1 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback DisableDebounce play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 1 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback DoNotCallBeforeWaitTime play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 1 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback LeadingAndTrailingFalse play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 0 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback LeadingAndTrailingTrue play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 2 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback LeadingTrue play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 1 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback Playground smoke-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 0 times
+  </p>
+</div>
+`;
+
+exports[`Hooks/useDebounceCallback TrailingTrue play-test 1`] = `
+<div>
+  <button type="button"
+          data-testid="clickable"
+  >
+    Click me
+  </button>
+  <p data-testid="count">
+    Callback called 1 times
+  </p>
+</div>
+`;
