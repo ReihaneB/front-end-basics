@@ -13,6 +13,7 @@
     "test:watch": "test-storybook --watchAll",
     "test:update": "test-storybook --updateSnapshot",
     "test:ui": "loki test --reference . --requireReference",
+    "test:ui:ci": "loki test --reference . --requireReference --reactUri file:./storybook-static",
     "test:ui:create": "loki test --reference .",
     "test:ui:update": "loki update --reference .",
     "stylelint": "stylelint 'src/**/*.css'"
