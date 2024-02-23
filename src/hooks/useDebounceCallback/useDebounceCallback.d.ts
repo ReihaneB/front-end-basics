@@ -1,5 +1,5 @@
 export type useDebounceCallbackProps = {
-  callback: (...rest: unknown[]) => unknown;
+  callback: (...args: never[]) => void;
   waitTime?: number;
   options?: {
     leading?: boolean;
