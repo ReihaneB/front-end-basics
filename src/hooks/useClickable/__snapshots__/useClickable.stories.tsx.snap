@@ -1,129 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hooks/useClickable ClickOnce play-test 1`] = `
-<div>
-  <button type="button"
-          data-testid="clickable"
-  >
-    Click me
-  </button>
-  <p data-testid="count">
-    Clicked 1 times
-  </p>
-</div>
+<main class="inter-normal">
+  <div>
+    <button type="button"
+            data-testid="clickable"
+    >
+      Click me
+    </button>
+    <p data-testid="count">
+      Clicked 1 times
+    </p>
+  </div>
+</main>
 `;
 
 exports[`Hooks/useClickable DisableDebounce play-test 1`] = `
-<div>
-  <button type="button"
-          data-testid="clickable"
-  >
-    Click me
-  </button>
-  <p data-testid="count">
-    Clicked 2 times
-  </p>
-</div>
+<main class="inter-normal">
+  <div>
+    <button type="button"
+            data-testid="clickable"
+    >
+      Click me
+    </button>
+    <p data-testid="count">
+      Clicked 2 times
+    </p>
+  </div>
+</main>
 `;
 
 exports[`Hooks/useClickable Disabled play-test 1`] = `
-<div>
-  <button type="button"
-          data-testid="clickable"
-  >
-    Click me
-  </button>
-  <p data-testid="count">
-    Clicked 0 times
-  </p>
-</div>
-`;
-
-exports[`Hooks/useClickable MultipleClicks play-test 1`] = `
-<div>
-  <button type="button"
-          data-testid="clickable"
-  >
-    Click me
-  </button>
-  <p data-testid="count">
-    Clicked 1 times
-  </p>
-</div>
-`;
-
-exports[`Hooks/useClickable Playground smoke-test 1`] = `
-<div>
-  <button type="button"
-          data-testid="clickable"
-  >
-    Click me
-  </button>
-  <p data-testid="count">
-    Clicked 0 times
-  </p>
-</div>
-`;
-
-exports[`Hooks/useClickable PressEnter play-test 1`] = `
-<div>
-  <p>
-    onMouseDown called 1 times
-  </p>
-  <div>
-    <button type="button"
-            data-testid="clickable"
-    >
-      Click me
-    </button>
-    <p data-testid="count">
-      Clicked 1 times
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Hooks/useClickable PressSpace play-test 1`] = `
-<div>
-  <p>
-    onMouseDown called 1 times
-  </p>
-  <div>
-    <button type="button"
-            data-testid="clickable"
-    >
-      Click me
-    </button>
-    <p data-testid="count">
-      Clicked 1 times
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Hooks/useClickable WithOnMouseDown play-test 1`] = `
-<div>
-  <p>
-    onMouseDown called 1 times
-  </p>
-  <div>
-    <button type="button"
-            data-testid="clickable"
-    >
-      Click me
-    </button>
-    <p data-testid="count">
-      Clicked 1 times
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Hooks/useClickable WithOnMouseEnter play-test 1`] = `
-<div>
-  <p data-testid="mouse-enter">
-    onMouseEnter called 3 times
-  </p>
+<main class="inter-normal">
   <div>
     <button type="button"
             data-testid="clickable"
@@ -134,5 +42,115 @@ exports[`Hooks/useClickable WithOnMouseEnter play-test 1`] = `
       Clicked 0 times
     </p>
   </div>
-</div>
+</main>
+`;
+
+exports[`Hooks/useClickable MultipleClicks play-test 1`] = `
+<main class="inter-normal">
+  <div>
+    <button type="button"
+            data-testid="clickable"
+    >
+      Click me
+    </button>
+    <p data-testid="count">
+      Clicked 1 times
+    </p>
+  </div>
+</main>
+`;
+
+exports[`Hooks/useClickable Playground smoke-test 1`] = `
+<main class="inter-normal">
+  <div>
+    <button type="button"
+            data-testid="clickable"
+    >
+      Click me
+    </button>
+    <p data-testid="count">
+      Clicked 0 times
+    </p>
+  </div>
+</main>
+`;
+
+exports[`Hooks/useClickable PressEnter play-test 1`] = `
+<main class="inter-normal">
+  <div>
+    <p>
+      onMouseDown called 1 times
+    </p>
+    <div>
+      <button type="button"
+              data-testid="clickable"
+      >
+        Click me
+      </button>
+      <p data-testid="count">
+        Clicked 1 times
+      </p>
+    </div>
+  </div>
+</main>
+`;
+
+exports[`Hooks/useClickable PressSpace play-test 1`] = `
+<main class="inter-normal">
+  <div>
+    <p>
+      onMouseDown called 1 times
+    </p>
+    <div>
+      <button type="button"
+              data-testid="clickable"
+      >
+        Click me
+      </button>
+      <p data-testid="count">
+        Clicked 1 times
+      </p>
+    </div>
+  </div>
+</main>
+`;
+
+exports[`Hooks/useClickable WithOnMouseDown play-test 1`] = `
+<main class="inter-normal">
+  <div>
+    <p>
+      onMouseDown called 1 times
+    </p>
+    <div>
+      <button type="button"
+              data-testid="clickable"
+      >
+        Click me
+      </button>
+      <p data-testid="count">
+        Clicked 1 times
+      </p>
+    </div>
+  </div>
+</main>
+`;
+
+exports[`Hooks/useClickable WithOnMouseEnter play-test 1`] = `
+<main class="inter-normal">
+  <div>
+    <p data-testid="mouse-enter">
+      onMouseEnter called 3 times
+    </p>
+    <div>
+      <button type="button"
+              data-testid="clickable"
+      >
+        Click me
+      </button>
+      <p data-testid="count">
+        Clicked 0 times
+      </p>
+    </div>
+  </div>
+</main>
 `;

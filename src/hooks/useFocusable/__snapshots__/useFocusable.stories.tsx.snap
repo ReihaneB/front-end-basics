@@ -1,102 +1,112 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hooks/UseFocusable AutoFocus smoke-test 1`] = `
-<div>
-  <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
-       role="button"
-       tabindex="0"
-       data-testid="focusable"
-  >
-    Click the button to focus it. This element is
+<main class="inter-normal">
+  <div>
+    <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
+         role="button"
+         tabindex="0"
+         data-testid="focusable"
+    >
+      Click the button to focus it. This element is
+    </div>
+    <button type="button"
+            data-testid="focus-button"
+    >
+      Click me to focus
+    </button>
   </div>
-  <button type="button"
-          data-testid="focus-button"
-  >
-    Click me to focus
-  </button>
-</div>
+</main>
 `;
 
 exports[`Hooks/UseFocusable ClickToFocus play-test 1`] = `
-<div>
-  <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
-       role="button"
-       tabindex="0"
-       data-testid="focusable"
-  >
-    Click the button to focus it. This element is
+<main class="inter-normal">
+  <div>
+    <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
+         role="button"
+         tabindex="0"
+         data-testid="focusable"
+    >
+      Click the button to focus it. This element is
+    </div>
+    <button type="button"
+            data-testid="focus-button"
+    >
+      Click me to focus
+    </button>
   </div>
-  <button type="button"
-          data-testid="focus-button"
-  >
-    Click me to focus
-  </button>
-</div>
+</main>
 `;
 
 exports[`Hooks/UseFocusable FocusAssociated play-test 1`] = `
-<div>
+<main class="inter-normal">
   <div>
-    <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
-         role="button"
-         tabindex="0"
-         data-testid="focusable-1"
-    >
-      Click the button to focus it. This element is
+    <div>
+      <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
+           role="button"
+           tabindex="0"
+           data-testid="focusable-1"
+      >
+        Click the button to focus it. This element is
+      </div>
+      <button type="button"
+              data-testid="focus-button-1"
+      >
+        Click me to focus
+      </button>
     </div>
-    <button type="button"
-            data-testid="focus-button-1"
-    >
-      Click me to focus
-    </button>
-  </div>
-  <div>
-    <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
-         role="button"
-         tabindex="0"
-         data-testid="focusable-2"
-    >
-      Click the button to focus it. This element is
+    <div>
+      <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
+           role="button"
+           tabindex="0"
+           data-testid="focusable-2"
+      >
+        Click the button to focus it. This element is
+      </div>
+      <button type="button"
+              data-testid="focus-button-2"
+      >
+        Click me to focus
+      </button>
     </div>
-    <button type="button"
-            data-testid="focus-button-2"
-    >
-      Click me to focus
-    </button>
   </div>
-</div>
+</main>
 `;
 
 exports[`Hooks/UseFocusable FocusOnTab play-test 1`] = `
-<div>
-  <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
-       role="button"
-       tabindex="0"
-       data-testid="focusable"
-  >
-    Click the button to focus it. This element is
+<main class="inter-normal">
+  <div>
+    <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
+         role="button"
+         tabindex="0"
+         data-testid="focusable"
+    >
+      Click the button to focus it. This element is
+    </div>
+    <button type="button"
+            data-testid="focus-button"
+    >
+      Click me to focus
+    </button>
   </div>
-  <button type="button"
-          data-testid="focus-button"
-  >
-    Click me to focus
-  </button>
-</div>
+</main>
 `;
 
 exports[`Hooks/UseFocusable Playground smoke-test 1`] = `
-<div>
-  <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
-       role="button"
-       tabindex="0"
-       data-testid="focusable"
-  >
-    Click the button to focus it. This element is
+<main class="inter-normal">
+  <div>
+    <div class="src-hooks-useFocusable-useFocusable-stories-module__focusable--CKkxg src-hooks-useFocusable-useFocusable-stories-module__focus--l8_mi"
+         role="button"
+         tabindex="0"
+         data-testid="focusable"
+    >
+      Click the button to focus it. This element is
+    </div>
+    <button type="button"
+            data-testid="focus-button"
+    >
+      Click me to focus
+    </button>
   </div>
-  <button type="button"
-          data-testid="focus-button"
-  >
-    Click me to focus
-  </button>
-</div>
+</main>
 `;
