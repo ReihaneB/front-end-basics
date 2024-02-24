@@ -1,8 +1,12 @@
 import type { Preview } from "@storybook/react";
 
+import React from "react";
+import { Inter } from 'next/font/google';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 import '@/styles/globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 const preview: Preview = {
   parameters: {
@@ -40,6 +44,13 @@ const preview: Preview = {
       appDirectory: true,
     },
   },
+  decorators: [
+    Story => (
+      <main className={inter.className}>
+        <Story />
+      </main>
+    ),
+  ]
 };
 
 export default preview;
