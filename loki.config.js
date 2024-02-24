@@ -2,7 +2,7 @@ const kebabCase = string => string.replace(/[.\s]/g, '-').toLowerCase();
 
 const nearestComponentImageshotPathFormatter = ({ story, parameters, configurationName }) => {
   const fileDir = parameters.fileName.substring(0, parameters.fileName.lastIndexOf('/'));
-  const imageshotDir = `${fileDir}/__imageshots`;
+  const imageshotDir = `${fileDir}/__imageshots__`;
 
   return `${imageshotDir}/${kebabCase(`${configurationName} ${story}`)}`;
 };
