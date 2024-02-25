@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Link AutoFocus play-test 1`] = `
+<main class="inter-normal">
+  <a data-testid="link-component"
+     href="/"
+  >
+    Click on the link
+  </a>
+</main>
+`;
+
+exports[`Components/Link ClickMultipleTimes play-test 1`] = `
+<main class="inter-normal">
+  <a data-testid="link-component"
+     href="/"
+  >
+    Click on the link
+  </a>
+</main>
+`;
+
+exports[`Components/Link CorrectHref play-test 1`] = `
+<main class="inter-normal">
+  <a data-testid="link-component"
+     href="/link"
+  >
+    /link
+  </a>
+</main>
+`;
+
+exports[`Components/Link FocusOnClick play-test 1`] = `
+<main class="inter-normal">
+  <a data-testid="link-component"
+     href="/"
+  >
+    Click on the link
+  </a>
+</main>
+`;
+
+exports[`Components/Link FocusOnTab play-test 1`] = `
+<main class="inter-normal">
+  <a data-testid="link-component"
+     href="/"
+  >
+    Click on the link
+  </a>
+</main>
+`;
+
+exports[`Components/Link LongText smoke-test 1`] = `
+<main class="inter-normal">
+  <div class="src-components-Link-Link-stories-module__container--Kpt8t">
+    <a data-testid="link-component"
+       href="/"
+    >
+      This is a very long text that should be going to the next line
+    </a>
+  </div>
+</main>
+`;
+
+exports[`Components/Link Playground smoke-test 1`] = `
+<main class="inter-normal">
+  <a data-testid="link-component"
+     href="/"
+  >
+    Click on the link
+  </a>
+</main>
+`;
+
+exports[`Components/Link PressEnter play-test 1`] = `
+<main class="inter-normal">
+  <a data-testid="link-component"
+     href="/"
+  >
+    Click on the link
+  </a>
+</main>
+`;
