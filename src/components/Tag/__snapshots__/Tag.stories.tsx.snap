@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Tag LongText smoke-test 1`] = `
+<main class="inter-normal">
+  <div class="src-components-Tag-Tag-stories-module__container--aL11d">
+    <div data-testid="tag-component"
+         tabindex="-1"
+    >
+      This is a very long text that should be going to the next line
+    </div>
+  </div>
+</main>
+`;
+
+exports[`Components/Tag NotFocusTab play-test 1`] = `
+<main class="inter-normal">
+  <div data-testid="tag-component"
+       tabindex="-1"
+  >
+    Tag content
+  </div>
+</main>
+`;
+
+exports[`Components/Tag Playground smoke-test 1`] = `
+<main class="inter-normal">
+  <div data-testid="tag-component"
+       tabindex="-1"
+  >
+    Tag content
+  </div>
+</main>
+`;
