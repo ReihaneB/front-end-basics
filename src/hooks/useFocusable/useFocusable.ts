@@ -6,7 +6,7 @@ export function useFocusable(
   ref: Ref<unknown>,
   { autoFocus = false }: UseFocusableProps
 ) {
-  const elementRef = useRef(null) as RefObject<HTMLButtonElement> & LegacyRef<HTMLDivElement>;
+  const elementRef = useRef(null) as RefObject<HTMLButtonElement> & LegacyRef<HTMLDivElement> & Ref<HTMLAnchorElement>;
 
   useEffect(() => {
     if (autoFocus && elementRef.current) {
