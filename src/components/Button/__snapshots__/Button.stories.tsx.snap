@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Button AutoFocus play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button ClickMultipleTimes play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button DisableDebounce play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button Disabled play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          disabled
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button FocusOnClick play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button FocusOnTab play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button Playground smoke-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button PressEnter play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
+
+exports[`Components/Button PressSpace play-test 1`] = `
+<main class="inter-normal">
+  <button type="button"
+          data-testid="button-component"
+  >
+    Click me
+  </button>
+</main>
+`;
