@@ -1,4 +1,4 @@
-import { useRef, useEffect, useImperativeHandle, Ref, useCallback, MutableRefObject, RefObject } from 'react';
+import { useRef, useEffect, useImperativeHandle, Ref, useCallback, RefObject, LegacyRef } from 'react';
 
 import { UseFocusableProps } from './useFocusable.d';
 
@@ -6,7 +6,7 @@ export function useFocusable(
   ref: Ref<unknown>,
   { autoFocus = false }: UseFocusableProps
 ) {
-  const elementRef = useRef(null) as MutableRefObject<HTMLInputElement> & RefObject<HTMLInputElement>;
+  const elementRef = useRef(null) as RefObject<HTMLButtonElement> & LegacyRef<HTMLDivElement>;
 
   useEffect(() => {
     if (autoFocus && elementRef.current) {
